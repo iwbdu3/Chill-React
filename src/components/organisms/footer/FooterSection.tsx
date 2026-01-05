@@ -1,6 +1,6 @@
 import React from "react"
 import { genreColumns, helpLinks } from "./FooterData"
-import Logo from "../../../assets/images/logo.png"
+import Logo from "../../../assets/images/Logo.png"
 
 const Footer: React.FC = () => {
   return (
