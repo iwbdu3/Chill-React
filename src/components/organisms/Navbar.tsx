@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import Logo from '../../assets/images/Logo.png'
+import Logo2 from '../../assets/images/Logo2.png'
 import User from '../../assets/images/User.png'
 import { useNavigate } from "react-router-dom"
 
@@ -28,16 +29,24 @@ const Navbar = () => {
       <div className="max-w-8xl mx-auto flex items-center justify-between">
         
         {/* Left: Logo & Menu */}
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-6 sm:gap-12">
           <Link to="/">
+            {/* Mobile Logo */}
+            <img
+              src={Logo2}
+              alt="Chill Logo Mobile"
+              className="h-6 object-contain sm:hidden"
+            />
+
+            {/* Desktop Logo */}
             <img
               src={Logo}
-              alt="Chill Logo"
-              className="h-12 object-contain"
+              alt="Chill Logo Desktop"
+              className="hidden h-12 object-contain sm:block"
             />
           </Link>
 
-          <ul className="hidden md:flex gap-12 font-bold text-lg">
+          <ul className="flex gap-6 sm:gap-12 font-bold text-sm sm:text-lg">
             <li>
               <Link to="/" className="hover:text-gray-300">
                 Series
@@ -57,17 +66,17 @@ const Navbar = () => {
         </div>
 
         {/* Right: Dropdown */}
-        <div className="relative hidden md:block text-lg font-bold z-10">
+        <div className="relative sm:block text-sm sm:text-lg font-bold z-10">
           <button
             onClick={toggleDropdown}
-            className="flex items-center gap-2 hover:text-gray-300 focus:outline-none"
+            className="flex items-center gap-1 sm:gap-2 hover:text-gray-300 focus:outline-none"
           >
-            <img src={User} alt="" className="h-8 w-8 rounded-full" />
+            <img src={User} alt="" className="h-6 sm:h-8 rounded-full" />
             <span className="text-sm">▾</span>
           </button>
 
           {isOpen && (
-            <div className="absolute right-0 mt-3 w-48 rounded-md bg-gray-800 shadow-lg overflow-hidden">
+            <div className="absolute right-0 mt-3 w-36 sm:w-48 rounded-md bg-gray-800 shadow-lg overflow-hidden">
               <Link
                 to="/"
                 onClick={closeDropdown}
