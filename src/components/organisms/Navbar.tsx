@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import Logo from '../../assets/images/logo.png'
-import User from '../../assets/images/user.png'
+import Logo from '../../assets/images/Logo.png'
+import User from '../../assets/images/User.png'
 import { useNavigate } from "react-router-dom"
 
 
