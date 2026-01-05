@@ -1,7 +1,7 @@
 import { EyeOff } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 import InputField from "../components/molecules/InputField"
-import Bg from "../assets/images/Cinema.jpg"
+import Bg from "../assets/images/Register.jpg"
 import Logo from "../assets/images/Logo.png"
 import Button from "../components/atoms/Button"
 
