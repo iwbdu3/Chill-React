@@ -35,11 +35,19 @@ const Button: React.FC<ButtonProps> = ({
         "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-200",
         "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black",
 
-        // Size
+        // Size (Responsive)
         {
-          "px-4 py-2 text-md": size === "sm",
-          "px-6 py-3 text-base": size === "md",
-          "px-8 py-4 text-lg": size === "lg",
+          // Small
+          "px-2 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm":
+            size === "sm",
+
+          // Medium (default)
+          "px-3 py-1.5 text-xs sm:px-6 sm:py-3 sm:text-sm":
+            size === "md",
+
+          // Large
+          "px-4 py-2 text-base sm:px-8 sm:py-4 sm:text-lg":
+            size === "lg",
         },
 
         // Variant

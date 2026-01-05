@@ -25,7 +25,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="w-full bg-black text-white px-10 py-6 fixed top-0 left-0 z-20">
+    <nav className="w-full bg-black text-white px-6 py-4 sm:px-10 sm:py-6 sticky top-0 z-20">
       <div className="max-w-8xl mx-auto flex items-center justify-between">
         
         {/* Left: Logo & Menu */}
@@ -35,7 +35,7 @@ const Navbar = () => {
             <img
               src={Logo2}
               alt="Chill Logo Mobile"
-              className="h-6 object-contain sm:hidden"
+              className="h-4 object-contain sm:hidden"
             />
 
             {/* Desktop Logo */}
@@ -46,7 +46,7 @@ const Navbar = () => {
             />
           </Link>
 
-          <ul className="flex gap-6 sm:gap-12 font-bold text-sm sm:text-lg">
+          <ul className="flex gap-6 sm:gap-12 font-bold text-xs sm:text-lg">
             <li>
               <Link to="/" className="hover:text-gray-300">
                 Series
@@ -66,12 +66,12 @@ const Navbar = () => {
         </div>
 
         {/* Right: Dropdown */}
-        <div className="relative sm:block text-sm sm:text-lg font-bold z-10">
+        <div className="relative sm:block text-xs sm:text-lg font-bold z-10">
           <button
             onClick={toggleDropdown}
             className="flex items-center gap-1 sm:gap-2 hover:text-gray-300 focus:outline-none"
           >
-            <img src={User} alt="" className="h-6 sm:h-8 rounded-full" />
+            <img src={User} alt="" className="h-5 sm:h-8 rounded-full" />
             <span className="text-sm">▾</span>
           </button>
 
