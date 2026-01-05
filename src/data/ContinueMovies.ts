@@ -1,3 +1,7 @@
+import dontlookup from "src/assets/images/DontLookUp.png";
+import allofusaredead from "src/assets/images/AllofUsAredead.png";
+import bluelock from "src/assets/images/BlueLock.png";
+import amancalledotto from "src/assets/images/AManCalledOtto.png";
 export interface ContinueMovie {
   id: number;
   title: string;
@@ -14,7 +18,7 @@ export const continueMovies: ContinueMovie[] = [
   {
     id: 1,
     title: "Don't Look Up",
-    image: "src/assets/images/DontLookUp.png",
+    image: dontlookup,
     rating: 4.5,
     progress: 45,
     duration: "2j 33m",
@@ -24,7 +28,7 @@ export const continueMovies: ContinueMovie[] = [
   {
     id: 2,
     title: "All of Us Are Dead",
-    image: "src/assets/images/AllofUsAredead.png",
+    image: allofusaredead,
     rating: 4.2,
     progress: 45,
     duration: "2j 33m",
@@ -34,7 +38,7 @@ export const continueMovies: ContinueMovie[] = [
   {
     id: 3,
     title: "Blue Lock",
-    image: "src/assets/images/BlueLock.png",
+    image: bluelock,
     rating: 4.6,
     badge: "Episode Baru",
     progress: 45,
@@ -45,7 +49,7 @@ export const continueMovies: ContinueMovie[] = [
   {
     id: 4,
     title: "A Man Called Otto",
-    image: "src/assets/images/AManCalledOtto.png",
+    image: amancalledotto,
     rating: 4.4,
     progress: 45,
     duration: "2j 33m",
@@ -54,7 +58,7 @@ export const continueMovies: ContinueMovie[] = [
   },
   {  id: 5,
     title: "All of Us Are Dead",
-    image: "src/assets/images/AllofUsAredead.png",
+    image: allofusaredead,
     rating: 4.2,
     progress: 45,
     duration: "2j 33m",
