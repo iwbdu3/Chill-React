@@ -11,7 +11,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
   variant = "default",
 }) => {
   return (
-    <div className="group relative w-[230px] flex-shrink-0 cursor-pointer transition-transform duration-300 hover:z-2 hover:scale-110">
+    <div className="group relative w-[150px] sm:w-[230px] flex-shrink-0 cursor-pointer transition-transform duration-300 hover:z-2 hover:scale-110">
       
       {/* Poster Container */}
       <div className="relative aspect-[2/3] overflow-hidden rounded-lg">
