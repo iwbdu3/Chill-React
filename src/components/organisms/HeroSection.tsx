@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../../assets/images/Hero.png";
+import Hero from "images/Hero.png";
 import Button from "../atoms/Button";
 import { VolumeX } from "lucide-react";
 
