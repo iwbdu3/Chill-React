@@ -1,9 +1,9 @@
 export interface Movie {
-  badge: any
   id: number
   title: string
   image: string
   rating?: number
+  badge: string
   progress?: number
   duration?: string
   episode?: string
