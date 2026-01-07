@@ -9,9 +9,9 @@ const ContinueWatchingSection = () => {
         Melanjutkan Tonton Film
       </h2>
 
-      <div className="relative">
+      <div className="relative -mx-6 overflow-visible">
         {/* Movie List */}
-        <div className="flex gap-4 overflow-x-auto no-scrollbar">
+        <div className="flex gap-4 overflow-x-auto no-scrollbar px-6 py-10">
           {continueMovies.map((movie) => (
             <ContinueMovieCard key={movie.id} movie={movie} />
           ))}
