@@ -4,7 +4,7 @@ export interface NewMovie {
   image: string;
   rating: number;
   badge?: string;
-  progress: number; // 0 - 100
+  progress: number;
   duration: string;
   episode: string;
   genres: string[];
