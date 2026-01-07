@@ -1,5 +1,6 @@
 import React from "react"
 import type { Movie } from "./Types"
+import Badge from "../../atoms/Badge"
 
 interface MovieCardProps {
   movie: Movie
@@ -15,6 +16,19 @@ const MovieCard: React.FC<MovieCardProps> = ({
       
       {/* Poster Container */}
       <div className="relative aspect-[2/3] overflow-hidden rounded-lg">
+
+        {/* Badge */}
+        {movie.badge && (
+          <Badge
+            text={movie.badge}
+            variant={
+              movie.badge.toLowerCase().includes("top")
+                ? "danger"
+                : "primary"
+            }
+          />
+        )}
+
         <img
           src={movie.image}
           alt={movie.title}

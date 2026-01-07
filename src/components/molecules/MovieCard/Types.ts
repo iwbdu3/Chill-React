@@ -1,4 +1,5 @@
 export interface Movie {
+  badge: any
   id: number
   title: string
   image: string
