@@ -46,7 +46,7 @@ export const topRatingMovies: TopRatingMovie[] = [
   {
     id: 4,
     title: "All of Us Are Dead",
-    image: "images/AllofUsAredead2.png",
+    image: "images/AllofUsAreDead2.png",
     rating: 4.4,
     badge: "Episode Baru",
     progress: 45,

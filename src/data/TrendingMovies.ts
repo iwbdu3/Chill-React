@@ -35,7 +35,7 @@ export const trendingMovies: TrendingMovie[] = [
   {
     id: 3,
     title: "Guardians of the Galaxy Vol. 3",
-    image: "images/GuardiansOfTheGalaxy.png",
+    image: "images/GuardiansofTheGalaxy.png",
     rating: 4.6,
     badge: "Episode Baru",
     progress: 45,

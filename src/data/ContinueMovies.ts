@@ -24,7 +24,7 @@ export const continueMovies: ContinueMovie[] = [
   {
     id: 2,
     title: "All of Us Are Dead",
-    image: "images/AllofUsAredead.png",
+    image: "images/AllofUsAreDead.png",
     rating: 4.2,
     progress: 45,
     duration: "2j 33m",
@@ -54,7 +54,7 @@ export const continueMovies: ContinueMovie[] = [
   },
   {  id: 5,
     title: "All of Us Are Dead",
-    image: "images/AllofUsAredead.png",
+    image: "images/AllofUsAreDead.png",
     rating: 4.2,
     progress: 45,
     duration: "2j 33m",
