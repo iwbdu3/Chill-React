@@ -8,4 +8,5 @@ export interface Movie {
   duration: string;
   episode: string;
   genres: string[];
+  ageRating?: string;
 }

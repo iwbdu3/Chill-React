@@ -8,6 +8,7 @@ export interface TopRatingMovie {
   duration: string;
   episode: string;
   genres: string[];
+  ageRating?: string;
 }
 
 export const topRatingMovies: TopRatingMovie[] = [
@@ -21,6 +22,7 @@ export const topRatingMovies: TopRatingMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {
     id: 2,
@@ -31,6 +33,7 @@ export const topRatingMovies: TopRatingMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {
     id: 3,
@@ -42,6 +45,7 @@ export const topRatingMovies: TopRatingMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {
     id: 4,
@@ -53,6 +57,7 @@ export const topRatingMovies: TopRatingMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {  
     id: 5,
@@ -63,6 +68,7 @@ export const topRatingMovies: TopRatingMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {  
     id: 6,
@@ -73,6 +79,7 @@ export const topRatingMovies: TopRatingMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {  
     id: 7,
@@ -83,5 +90,6 @@ export const topRatingMovies: TopRatingMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
 ];
