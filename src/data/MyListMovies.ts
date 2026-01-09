@@ -1,4 +1,4 @@
-export interface TrendingMovie {
+export interface MyListMovie {
   id: number;
   title: string;
   image: string;
@@ -8,26 +8,26 @@ export interface TrendingMovie {
   duration: string;
   episode: string;
   genres: string[];
-  ageRating: string;
+  ageRating?: string;
 }
 
-export const trendingMovies: TrendingMovie[] = [
+export const myListMovies: MyListMovie[] = [
   {
     id: 1,
-    title: "The Tomorrow War",
-    image: "images/TheTomorrowWar.png",
+    title: "Suzume",
+    image: "images/Suzume.png",
     rating: 4.5,
+    badge: "Top 10",
     progress: 45,
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
     ageRating: "13+",
-    
   },
   {
     id: 2,
-    title: "Ant Man and The Wasp",
-    image: "images/AntMan.png",
+    title: "Jurassic World Dominion",
+    image: "images/JurassicWorld.png",
     rating: 4.2,
     progress: 45,
     duration: "2j 33m",
@@ -37,8 +37,8 @@ export const trendingMovies: TrendingMovie[] = [
   },
   {
     id: 3,
-    title: "Guardians of the Galaxy Vol. 3",
-    image: "images/GuardiansofTheGalaxy.png",
+    title: "Sonic the Hedgehog 2",
+    image: "images/Sonic2.png",
     rating: 4.6,
     badge: "Episode Baru",
     progress: 45,
@@ -49,9 +49,10 @@ export const trendingMovies: TrendingMovie[] = [
   },
   {
     id: 4,
-    title: "A Man Called Otto",
-    image: "images/AManCalledOtto2.png",
+    title: "All of Us Are Dead",
+    image: "images/AllofUsAreDead2.png",
     rating: 4.4,
+    badge: "Episode Baru",
     progress: 45,
     duration: "2j 33m",
     episode: "Episode 1",
@@ -60,8 +61,8 @@ export const trendingMovies: TrendingMovie[] = [
   },
   {  
     id: 5,
-    title: "The Little Mermaid",
-    image: "images/TheLittleMermaid.png",
+    title: "Big Hero 6",
+    image: "images/BigHero6.png",
     rating: 4.2,
     progress: 45,
     duration: "2j 33m",
@@ -71,8 +72,8 @@ export const trendingMovies: TrendingMovie[] = [
   },
   {  
     id: 6,
-    title: "Suzume",
-    image: "images/Suzume.png",
+    title: "A Man Called Otto",
+    image: "images/AManCalledOtto2.png",
     rating: 4.2,
     progress: 45,
     duration: "2j 33m",
@@ -82,8 +83,8 @@ export const trendingMovies: TrendingMovie[] = [
   },
   {  
     id: 7,
-    title: "Jurassic",
-    image: "images/JurassicWorld.png",
+    title: "The Little Mermaid",
+    image: "images/TheLittleMermaid.png",
     rating: 4.2,
     progress: 45,
     duration: "2j 33m",

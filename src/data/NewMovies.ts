@@ -8,6 +8,7 @@ export interface NewMovie {
   duration: string;
   episode: string;
   genres: string[];
+  ageRating: string;
 }
 
 export const newMovies: NewMovie[] = [
@@ -20,6 +21,7 @@ export const newMovies: NewMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {
     id: 2,
@@ -30,6 +32,7 @@ export const newMovies: NewMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {
     id: 3,
@@ -41,6 +44,7 @@ export const newMovies: NewMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {
     id: 4,
@@ -51,6 +55,7 @@ export const newMovies: NewMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {  
     id: 5,
@@ -61,6 +66,7 @@ export const newMovies: NewMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {  
     id: 6,
@@ -71,6 +77,7 @@ export const newMovies: NewMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
   {  
     id: 7,
@@ -81,5 +88,6 @@ export const newMovies: NewMovie[] = [
     duration: "2j 33m",
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
+    ageRating: "13+",
   },
 ];

@@ -9,32 +9,32 @@ import FooterSection from '../components/organisms/footer/FooterSection'
 const Home = () => {
   return (
     <>
-      <Navbar />
-
       <main className="text-white bg-black min-h-screen">
-      <HeroSection />
+        <Navbar />
+        
+        <HeroSection />
 
-      <ContinueWatchingSection />
+        <ContinueWatchingSection />
 
-      <MovieSection
-        title="Top Rating Film dan Series Hari Ini"
-        movies={topRatingMoviess}
-        variant="continue"
-      />
+        <MovieSection
+          title="Top Rating Film dan Series Hari Ini"
+          movies={topRatingMoviess}
+          variant="continue"
+        />
 
-      <MovieSection
-        title="Film Trending"
-        movies={trendingMovies}
-        variant="continue"
-      />
+        <MovieSection
+          title="Film Trending"
+          movies={trendingMovies}
+          variant="continue"
+        />
 
-      <MovieSection
-        title="Rilis Baru"
-        movies={trendingMovies}
-        variant="continue"
-      />
+        <MovieSection
+          title="Rilis Baru"
+          movies={trendingMovies}
+          variant="continue"
+        />
 
-      <FooterSection />
+        <FooterSection />
       </main>
     </>
   )
