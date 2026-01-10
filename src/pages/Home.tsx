@@ -19,19 +19,16 @@ const Home = () => {
         <MovieSection
           title="Top Rating Film dan Series Hari Ini"
           movies={topRatingMoviess}
-          variant="continue"
         />
 
         <MovieSection
           title="Film Trending"
           movies={trendingMovies}
-          variant="continue"
         />
 
         <MovieSection
           title="Rilis Baru"
           movies={trendingMovies}
-          variant="continue"
         />
 
         <FooterSection />

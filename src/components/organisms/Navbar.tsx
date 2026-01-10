@@ -25,7 +25,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="w-full bg-black text-white px-6 py-4 sm:px-10 sm:py-6 sticky top-0 z-20">
+    <nav className="w-full bg-black text-white px-6 py-4 sm:px-10 sm:py-6 sticky top-0 z-[9999]">
       <div className="max-w-8xl mx-auto flex items-center justify-between">
         
         {/* Left: Logo & Menu */}
@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
 
         {/* Right: Dropdown */}
-        <div className="relative sm:block text-xs sm:text-lg font-bold z-10">
+        <div className="relative sm:block text-xs sm:text-lg font-bold z-[9999]">
           <button
             onClick={toggleDropdown}
             className="flex items-center gap-1 sm:gap-2 hover:text-gray-300 focus:outline-none"

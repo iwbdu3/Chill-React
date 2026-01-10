@@ -18,10 +18,10 @@ const MyList: React.FC = () => {
                 Daftar Saya
                 </h1>
 
-                {/* Movie Grid */}
+                {/* Movie */}
                 <div className="flex flex-wrap gap-4">
                     {myListMovies.map((movie) => (
-                        <MovieCard key={movie.id} movie={movie} />
+                        <MovieCard key={movie.id} movie={movie}/>
                     ))}
                 </div>
             </section>

@@ -11,7 +11,6 @@ interface MovieSectionProps {
 const MovieSection: React.FC<MovieSectionProps> = ({
   title,
   movies,
-  variant,
 }) => {
   return (
     <section className="px-6 md:px-16 mt-10">
@@ -24,7 +23,6 @@ const MovieSection: React.FC<MovieSectionProps> = ({
             <MovieCard
               key={movie.id}
               movie={movie}
-              variant={variant}
             />
           ))}
         </div>
