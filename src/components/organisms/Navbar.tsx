@@ -48,7 +48,7 @@ const Navbar = () => {
 
           <ul className="flex gap-6 sm:gap-12 font-bold text-xs sm:text-lg">
             <li>
-              <Link to="/" className="hover:text-gray-300">
+              <Link to="/series" className="hover:text-gray-300">
                 Series
               </Link>
             </li>

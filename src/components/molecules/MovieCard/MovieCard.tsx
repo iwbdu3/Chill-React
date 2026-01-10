@@ -5,38 +5,41 @@ import Badge from "../../atoms/Badge"
 
 interface MovieCardProps {
   movie: Movie
+  variant?: "default" | "continue"
 }
 
-const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
+const MovieCard: React.FC<MovieCardProps> = ({
+  movie,
+  variant = "default",
+}) => {
+  const isContinue = variant === "continue"
+
   return (
     <div
-      className="
-        group
-        relative
-        w-[100px]
-        sm:w-[265px]
-        flex-shrink-0
-        transition-all
-        duration-500
+      className={`
+        group relative flex-shrink-0
+        transition-all duration-500
         hover:z-[999]
-      "
+        ${isContinue ? "w-[300px]" : "w-[100px] sm:w-[265px]"}
+      `}
     >
       {/* CARD WRAPPER */}
       <div
-        className="
-          relative
-          overflow-visible
-          transition-all
-          duration-500
+        className={`
+          relative overflow-visible transition-all duration-500
           group-hover:scale-125
-          group-hover:-translate-y-8
-        "
+          ${isContinue ? "" : "group-hover:-translate-y-8"}
+        `}
       >
-        {/* POSTER */}
-        <div className="relative aspect-[2/3] overflow-hidden rounded-lg bg-zinc-900">
-
-          {/* Badge */}
-          {movie.badge && (
+        {/* IMAGE CONTAINER */}
+        <div
+          className={`
+            relative overflow-hidden bg-zinc-900
+            ${isContinue ? "h-[160px] rounded-xl" : "aspect-[2/3] rounded-lg"}
+          `}
+        >
+          {/* BADGE (default only) */}
+          {!isContinue && movie.badge && (
             <Badge
               text={movie.badge}
               variant={
@@ -52,31 +55,33 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
             alt={movie.title}
             className="h-full w-full object-cover"
           />
+
+          {/* CONTINUE OVERLAY INFO */}
+          {isContinue && (
+            <>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-sm text-white">
+                <span className="truncate font-medium">{movie.title}</span>
+                <span className="text-white/80">{movie.rating}/5</span>
+              </div>
+            </>
+          )}
         </div>
 
         {/* HOVER PANEL */}
         <div
           className="
-            absolute
-            left-0
-            right-0
-            top-full
-            z-50
-            h-0
-            overflow-hidden
-            rounded-b-lg
-            bg-zinc-900
+            absolute left-0 right-0 top-full z-50
+            h-0 overflow-hidden
+            rounded-b-lg bg-zinc-900
             opacity-0
-            transition-all
-            duration-500
-            delay-150
+            transition-all duration-500 delay-150
             group-hover:h-[160px]
             group-hover:opacity-100
           "
         >
           <div className="p-4 text-white">
-
-            {/* ACTION BUTTONS */}
+            {/* ACTIONS */}
             <div className="mb-3 flex items-center gap-3">
               <button className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-black">
                 <Play size={16} fill="black" />
@@ -98,14 +103,27 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
                   {movie.ageRating}
                 </span>
               )}
-
               {movie.duration && <span>{movie.duration}</span>}
             </div>
 
+            {/* EPISODE (continue only) */}
+            {movie.episode && (
+              <p className="text-xs font-semibold">“{movie.episode}”</p>
+            )}
+
+            {/* PROGRESS */}
+            {movie.progress !== undefined && (
+              <div className="mt-2 h-1 w-full rounded bg-zinc-700">
+                <div
+                  className="h-1 rounded bg-blue-600"
+                  style={{ width: `${movie.progress}%` }}
+                />
+              </div>
+            )}
 
             {/* GENRES */}
             {movie.genres && (
-              <div className="text-xs text-zinc-400">
+              <div className="mt-2 text-xs text-zinc-400">
                 {movie.genres.join(" • ")}
               </div>
             )}

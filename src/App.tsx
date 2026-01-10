@@ -3,6 +3,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Home from './pages/Home'
 import MyList from './pages/MyList'
+import Series from './pages/Series'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/myList" element={<MyList />} />
+      <Route path="/series" element={<Series />} />
     </Routes>
   )
 }
