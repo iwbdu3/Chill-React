@@ -11,7 +11,7 @@ const MyList: React.FC = () => {
             <Navbar />
 
             {/* CONTENT */}
-            <section className="px-6 pt-28 sm:px-16">
+            <section className="px-6 pt-12 sm:px-16">
                 
                 {/* Title */}
                 <h1 className="mb-8 text-2xl font-bold sm:text-3xl">

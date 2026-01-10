@@ -13,8 +13,8 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
       className="
         group
         relative
-        w-[150px]
-        sm:w-[230px]
+        w-[100px]
+        sm:w-[265px]
         flex-shrink-0
         transition-all
         duration-500
