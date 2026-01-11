@@ -11,23 +11,39 @@ interface MovieSectionProps {
 const MovieSection: React.FC<MovieSectionProps> = ({
   title,
   movies,
+  variant = "default",
 }) => {
+  const isContinue = variant === "continue"
+
   return (
-    <section className="px-6 md:px-16 mt-10">
-      <h2 className="mb-6 text-xl sm:text-3xl font-bold">{title}</h2>
+    <section className={`mt-10 px-6 md:px-16 text-white`}>
+      <h2 className="mb-6 text-xl font-bold sm:text-3xl">
+        {title}
+      </h2>
 
-      <div className="relative">
-
-        <div className="flex gap-4 overflow-x-auto no-scrollbar">
+      {/* WRAPPER */}
+      <div
+        className={`
+          relative
+          ${isContinue ? "-mx-6 h-[200px]" : ""}
+        `}
+      >
+        <div
+          className={`
+            flex gap-4 overflow-x-auto no-scrollbar
+            ${isContinue ? "h-full items-start px-6" : ""}
+          `}
+        >
           {movies.map((movie) => (
             <MovieCard
               key={movie.id}
               movie={movie}
+              variant={variant}
             />
           ))}
         </div>
 
-        {/* Navigation */}
+        {/* NAVIGATION */}
         <NavigationButton direction="left" />
         <NavigationButton direction="right" />
       </div>

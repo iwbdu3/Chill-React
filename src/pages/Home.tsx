@@ -1,10 +1,10 @@
 import Navbar from '../components/organisms/Navbar'
 import HeroSection from '../components/organisms/HeroSection'
-import ContinueWatchingSection from '../components/organisms/ContinueWatchingSection'
 import MovieSection from '../components/organisms/MovieSection'
 import { topRatingMovies as topRatingMoviess } from '../data/TopRatingMovies'
 import { trendingMovies } from '../data/TrendingMovies'
 import FooterSection from '../components/organisms/footer/FooterSection'
+import { continueMovies } from '../data/ContinueMovies'
 
 const Home = () => {
   return (
@@ -14,7 +14,11 @@ const Home = () => {
         
         <HeroSection />
 
-        <ContinueWatchingSection />
+        <MovieSection
+          title="Melanjutkan Tonton Film"
+          movies={continueMovies}
+          variant="continue"
+        />
 
         <MovieSection
           title="Top Rating Film dan Series Hari Ini"
