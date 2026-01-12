@@ -6,11 +6,13 @@ import Badge from "../../atoms/Badge"
 interface MovieCardProps {
   movie: Movie
   variant?: "default" | "continue"
+  onOpenDetail?: () => void
 }
 
 const MovieCard: React.FC<MovieCardProps> = ({
   movie,
   variant = "default",
+  onOpenDetail,
 }) => {
   
   const isContinue = variant === "continue"
@@ -23,7 +25,6 @@ const MovieCard: React.FC<MovieCardProps> = ({
 
     return "primary"
   }
-
 
   return (
     <div
@@ -98,7 +99,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
                 <Check size={16} />
               </button>
 
-              <button className="ml-auto flex h-9 w-9 items-center justify-center rounded-full border border-white/40">
+              <button onClick={onOpenDetail} className="ml-auto flex h-9 w-9 items-center justify-center rounded-full border border-white/40">
                 <ChevronDown size={16} />
               </button>
             </div>

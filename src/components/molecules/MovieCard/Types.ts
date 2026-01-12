@@ -9,4 +9,5 @@ export interface Movie {
   episode?: string
   genres?: string[]
   ageRating?: string
+  description?: string
 }

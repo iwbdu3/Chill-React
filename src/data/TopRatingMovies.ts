@@ -9,6 +9,7 @@ export interface TopRatingMovie {
   episode: string;
   genres: string[];
   ageRating?: string;
+  description?: string;
 }
 
 export const topRatingMovies: TopRatingMovie[] = [
@@ -23,6 +24,7 @@ export const topRatingMovies: TopRatingMovie[] = [
     episode: "Episode 1",
     genres: ["Misteri", "Kriminal", "Fantasi"],
     ageRating: "13+",
+    description: "Setelah bertemu dengan seorang pria misterius yang mencari pintu, Suzume, seorang gadis sekolah menengah berusia 17 tahun, menemukan sebuah pintu di reruntuhan sebuah kota tua. Ketika dia membuka pintu itu, bencana mulai melanda Jepang. Untuk menghentikan kehancuran ini, Suzume harus menutup pintu-pintu lain yang tersebar di seluruh negeri. Dalam perjalanannya, dia bertemu dengan berbagai karakter unik dan menghadapi tantangan yang menguji keberanian dan tekadnya."
   },
   {
     id: 2,
