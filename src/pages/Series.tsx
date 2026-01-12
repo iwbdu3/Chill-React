@@ -14,7 +14,7 @@ const Series = () => {
         <Navbar />
         
 
-        <HeroSection />
+        <HeroSection variant="withGenre" />
 
         <MovieSection
           title="Melanjutkan Tonton Series"
