@@ -12,7 +12,18 @@ const MovieCard: React.FC<MovieCardProps> = ({
   movie,
   variant = "default",
 }) => {
+  
   const isContinue = variant === "continue"
+
+  const getBadgeVariant = (badge: string) => {
+    const value = badge.toLowerCase()
+
+    if (value.includes("premium")) return "premium"
+    if (value.includes("top")) return "danger"
+
+    return "primary"
+  }
+
 
   return (
     <div
@@ -42,11 +53,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
           {!isContinue && movie.badge && (
             <Badge
               text={movie.badge}
-              variant={
-                movie.badge.toLowerCase().includes("top")
-                  ? "danger"
-                  : "primary"
-              }
+              variant={getBadgeVariant(movie.badge)}
             />
           )}
 

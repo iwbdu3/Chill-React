@@ -24,14 +24,14 @@ const MovieSection: React.FC<MovieSectionProps> = ({
       {/* WRAPPER */}
       <div
         className={`
-          relative
-          ${isContinue ? "-mx-6 h-[200px]" : ""}
+          relative -mx-6
+          ${isContinue ? "h-[200px]" : ""}
         `}
       >
         <div
           className={`
-            flex gap-4 overflow-x-auto no-scrollbar
-            ${isContinue ? "h-full items-start px-6" : ""}
+            flex gap-4 overflow-x-auto no-scrollbar px-6
+            ${isContinue ? "h-full items-start" : ""}
           `}
         >
           {movies.map((movie) => (

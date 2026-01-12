@@ -5,6 +5,7 @@ import { topRatingMovies as topRatingMoviess } from '../data/TopRatingMovies'
 import { trendingMovies } from '../data/TrendingMovies'
 import FooterSection from '../components/organisms/footer/FooterSection'
 import { continueMovies } from '../data/ContinueMovies'
+import { seriesFromChills } from '../data/SeriesFromChill'
 
 const Series = () => {
   return (
@@ -20,6 +21,11 @@ const Series = () => {
           title="Melanjutkan Tonton Series"
           movies={continueMovies}
           variant="continue"
+        />
+
+        <MovieSection
+          title="Series Persembahan Chill"
+          movies={seriesFromChills}
         />
 
         <MovieSection
