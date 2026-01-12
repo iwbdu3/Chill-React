@@ -33,7 +33,8 @@ const MovieSection: React.FC<MovieSectionProps> = ({
         >
           <div
             className={`
-              flex gap-4 overflow-x-auto no-scrollbar px-6
+              flex gap-4 px-6 no-scrollbar
+              overflow-x-auto overflow-y-visible
               ${isContinue ? "h-full items-start" : ""}
             `}
           >
@@ -50,6 +51,7 @@ const MovieSection: React.FC<MovieSectionProps> = ({
           <NavigationButton direction="left" />
           <NavigationButton direction="right" />
         </div>
+
       </section>
 
       {/* MODAL */}

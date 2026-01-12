@@ -39,8 +39,9 @@ const MovieCard: React.FC<MovieCardProps> = ({
       <div
         className={`
           relative overflow-visible transition-all duration-500
-          group-hover:scale-125
-          ${isContinue ? "" : "group-hover:-translate-y-8"}
+          group-hover:-translate-y-6
+          group-hover:shadow-2xl
+          ${isContinue ? "" : ""}
         `}
       >
         {/* IMAGE CONTAINER */}
@@ -79,16 +80,23 @@ const MovieCard: React.FC<MovieCardProps> = ({
         {/* HOVER PANEL */}
         <div
           className="
-            absolute left-0 right-0 top-full z-50
-            h-0 overflow-hidden
-            rounded-b-lg bg-zinc-900
+            pointer-events-none
+            absolute inset-0 z-50
+            flex items-end
             opacity-0
-            transition-all duration-500 delay-150
-            group-hover:h-[160px]
+            transition-all duration-300
+            group-hover:pointer-events-auto
             group-hover:opacity-100
           "
         >
-          <div className="p-4 text-white">
+          <div className="
+            w-full translate-y-4
+            rounded-b-lg bg-zinc-900
+            p-4
+            transition-transform duration-300
+            group-hover:translate-y-0
+          "> 
+            <div className="text-white">
             {/* ACTIONS */}
             <div className="mb-3 flex items-center gap-3">
               <button className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-black">
@@ -136,6 +144,9 @@ const MovieCard: React.FC<MovieCardProps> = ({
               </div>
             )}
           </div>
+          </div>
+
+          
         </div>
       </div>
     </div>
